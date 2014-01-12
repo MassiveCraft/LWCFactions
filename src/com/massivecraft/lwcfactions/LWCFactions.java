@@ -21,6 +21,7 @@ public class LWCFactions extends JavaPlugin
 		log("Hooked into LWC!");
 	}
 
+	@Override
 	public void onEnable()
 	{
 		Plugin lwc = getServer().getPluginManager().getPlugin("LWC");
@@ -34,11 +35,6 @@ public class LWCFactions extends JavaPlugin
 
 			log("Waiting for LWC to be enabled...");
 		}
-	}
-
-	public void onDisable()
-	{
-
 	}
 
 	private void log(String message)
