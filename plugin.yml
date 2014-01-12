@@ -4,5 +4,5 @@ main: com.massivecraft.lwcfactions.LWCFactions
 authors: [yendor46]
 description: LWCFactions denies creation of LWC Protections in Faction land if you don't have build permission.  
 load: POSTWORLD
-depend: [ LWC, Factions ]
+depend: [ LWC, Factions, mcore ]
 class-loader-of: LWC
