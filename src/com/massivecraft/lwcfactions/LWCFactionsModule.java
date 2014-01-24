@@ -8,12 +8,12 @@ import com.massivecraft.mcore.ps.PS;
 
 public class LWCFactionsModule extends JavaModule
 {
-
 	/**
 	 * The bukkit plugin
 	 */
 	@SuppressWarnings("unused")
 	private LWCFactions plugin;
+	
 	/**
 	 * The LWC object, set by load ()
 	 */
@@ -28,9 +28,8 @@ public class LWCFactionsModule extends JavaModule
 	@Override
 	public void onRegisterProtection(LWCProtectionRegisterEvent event)
 	{
-
-        if (FactionsListenerMain.canPlayerBuildAt(event.getPlayer(), PS.valueOf(event.getBlock()), false)) return;
-        event.setCancelled(true);
-
+		if (FactionsListenerMain.canPlayerBuildAt(event.getPlayer(), PS.valueOf(event.getBlock()), false)) return;
+		event.setCancelled(true);
 	}
+	
 }

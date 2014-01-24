@@ -16,8 +16,7 @@ public class LWCFactions extends JavaPlugin
 	 */
 	public void init()
 	{
-		LWC.getInstance().getModuleLoader()
-				.registerModule(this, new LWCFactionsModule(this));
+		LWC.getInstance().getModuleLoader().registerModule(this, new LWCFactionsModule(this));
 		log("Hooked into LWC!");
 	}
 
@@ -32,7 +31,6 @@ public class LWCFactions extends JavaPlugin
 		}
 		else
 		{
-
 			log("Waiting for LWC to be enabled...");
 		}
 	}
@@ -41,4 +39,5 @@ public class LWCFactions extends JavaPlugin
 	{
 		logger.info("LWC-Factions: " + message);
 	}
+	
 }
