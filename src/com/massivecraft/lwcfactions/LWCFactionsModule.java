@@ -4,7 +4,7 @@ import com.griefcraft.lwc.LWC;
 import com.griefcraft.scripting.JavaModule;
 import com.griefcraft.scripting.event.LWCProtectionRegisterEvent;
 import com.massivecraft.factions.listeners.FactionsListenerMain;
-import com.massivecraft.mcore.ps.PS;
+import com.massivecraft.massivecore.ps.PS;
 
 public class LWCFactionsModule extends JavaModule
 {
